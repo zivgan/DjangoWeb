@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: no
+  remote_user: root
+  tasks:
+    - name: Check the date on the server.
+      command: date
+    - name: Check the ip ip on the server.
+      command: ip add
